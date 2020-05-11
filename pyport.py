@@ -10,7 +10,12 @@ from datetime import datetime
 t1 = datetime.now()
 
 print("-" * 60)
-print("****************PyPort - Open Ports Scanner****************")
+print("             ___         ___           _   ")
+print("            / _ \_   _  / _ \___  _ __| |_ ")
+print("           / /_)/ | | |/ /_)/ _ \| '__| __|")
+print("          / ___/| |_| / ___/ (_) | |  | |_ ")
+print("          \/     \__, \/    \___/|_|   \__|")
+print("                |___/                     ")
 print("-" * 60)
 print("What do you wanna scan?")
 print("1. Scan Reserved Ports Only")
@@ -22,15 +27,15 @@ print("5. Scan Specific Port")
 try:
 	scan_mode = int(input("Enter your option: "))
 	if(scan_mode not in [1,2,3,4,5]):
-		print("You have chose wrong option")
+		print("WRONG OPTION!")
 		sys.exit()
 except ValueError:
-	print("You have not chose any option")
+	print("WRONG OPTION!")
 	sys.exit()
 
-target = input("Enter your target: ")
+target = input("Enter target: ")
 if(len(target) == 0):
-	print("You didn't entered target")
+	print("TARGET NOT FOUND!")
 	sys.exit()
 
 print("-"*50)
