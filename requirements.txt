@@ -1,2 +1,2 @@
 sockets==1.0.0
-queues=0.6.3
+queues==0.6.3
